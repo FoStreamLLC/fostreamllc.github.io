@@ -16,44 +16,18 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
-    color: white;
-}
-
-/* ================= HERO ================= */
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background: radial-gradient(circle at 30% 30%, #1e293b 0%, #0f172a 60%);
-}
-
-/* soft green glow */
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(34,197,94,0.25), transparent 70%);
-    top: -200px;
-    right: -200px;
-    filter: blur(80px);
+    background: #f8fafc;
+    color: #1e293b;
 }
 
 /* NAVBAR */
 
 .nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 30px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 80px;
+    background: white;
 }
 
 .logo {
@@ -62,132 +36,129 @@ body {
 }
 
 .nav a {
-    color: #e2e8f0;
+    color: #475569;
     text-decoration: none;
     margin-left: 30px;
     font-size: 14px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .nav a:hover {
-    color: #22c55e;
+    color: #16a34a;
 }
 
-/* HERO CONTENT */
+/* HERO */
 
-.hero-content {
-    max-width: 700px;
-    margin-left: 80px;
-    z-index: 2;
+.hero {
+    text-align: center;
+    padding: 120px 20px 100px 20px;
+    background: white;
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.15;
     margin-bottom: 25px;
 }
 
 .hero p {
     font-size: 18px;
-    line-height: 1.7;
-    color: #cbd5e1;
-    margin-bottom: 35px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #64748b;
+    line-height: 1.6;
 }
 
 .button {
     display: inline-block;
-    padding: 16px 40px;
-    border-radius: 60px;
-    background: #22c55e;
+    padding: 16px 42px;
+    background: #16a34a;
     color: white;
-    font-weight: 600;
+    border-radius: 40px;
     text-decoration: none;
-    transition: 0.3s ease;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background: #16a34a;
-    transform: translateY(-2px);
+    background: #15803d;
 }
 
-/* ================= APP SECTION ================= */
+/* APP SECTION */
 
 .app-section {
-    padding: 140px 20px;
-    background: linear-gradient(to bottom, #0f172a, #111827);
-    display: flex;
-    justify-content: center;
+    padding: 100px 80px;
+    background: #f1f5f9;
 }
 
-.app-card {
-    background: rgba(255,255,255,0.04);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 60px 50px;
-    border-radius: 30px;
-    text-align: center;
-    max-width: 700px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+.app-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
 .app-logo {
-    width: 180px;
-    margin-bottom: 30px;
+    width: 280px;
     border-radius: 20px;
 }
 
-.app-section h2 {
-    font-size: 30px;
+.app-text h2 {
+    font-size: 34px;
     margin-bottom: 20px;
 }
 
-.app-subtext {
-    color: #cbd5e1;
+.app-text p {
     font-size: 17px;
-    margin-bottom: 35px;
+    color: #64748b;
     line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .app-button {
     display: inline-block;
-    padding: 18px 48px;
-    background: #22c55e;
+    padding: 18px 46px;
+    background: #16a34a;
     color: white;
-    border-radius: 60px;
+    border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .app-button:hover {
-    background: #16a34a;
-    transform: translateY(-3px);
+    background: #15803d;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 .footer {
     text-align: center;
     padding: 60px 20px;
-    background: #0b1120;
+    background: white;
     color: #94a3b8;
     font-size: 14px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
-    .hero-content {
-        margin: 0 40px;
+    .app-container {
+        flex-direction: column;
+        text-align: center;
     }
 
     .nav {
-        padding: 25px 40px;
+        padding: 25px 30px;
+    }
+
+    .app-section {
+        padding: 80px 30px;
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 }
 </style>
@@ -195,51 +166,53 @@ body {
 
 <body>
 
-<div class="hero">
+<!-- NAVBAR -->
 
-    <div class="nav">
-        <div class="logo">FoStream LLC</div>
-        <div>
-            <a href="/">Home</a>
-            <a href="#">About</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/support">Support</a>
-        </div>
+<div class="nav">
+    <div class="logo">FoStream LLC</div>
+    <div>
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/support">Support</a>
     </div>
-
-    <div class="hero-content">
-        <h1>Welcome to a World of Possibilities<br>Right in Your Pocket.</h1>
-
-        <p>
-            At FoStream LLC, we create mobile apps designed to educate,
-            entertain, and enhance everyday life.
-        </p>
-
-        <a href="#app" class="button">LEARN MORE</a>
-    </div>
-
 </div>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Welcome to a World of Possibilities<br>Right in Your Pocket.</h1>
+
+    <p>
+        At FoStream LLC, we create mobile apps designed to educate,
+        entertain, and enhance everyday life.
+    </p>
+
+    <a href="#app" class="button">Learn More</a>
+</section>
 
 <!-- APP SECTION -->
 
 <section class="app-section" id="app">
 
-    <div class="app-card">
+    <div class="app-container">
 
         <img src="vocab-logo.PNG" alt="VocabSprout Logo" class="app-logo">
 
-        <h2>VocabSprout – Your SAT & ACT Vocabulary Companion</h2>
+        <div class="app-text">
+            <h2>VocabSprout – Your SAT & ACT Vocabulary Companion</h2>
 
-        <p class="app-subtext">
-            Master high-impact vocabulary with smart flashcards,
-            curated word decks, and efficient practice tools designed
-            for serious students.
-        </p>
+            <p>
+                Master essential vocabulary with curated word decks,
+                smart flashcards, and efficient study tools designed
+                specifically for SAT and ACT preparation.
+            </p>
 
-        <a href="https://apps.apple.com" class="app-button">
-            GO TO APPLE APP STORE
-        </a>
+            <a href="https://apps.apple.com/us/app/vocabsprout/id6758027898" class="app-button">
+                Go to Apple App Store
+            </a>
+        </div>
 
     </div>
 

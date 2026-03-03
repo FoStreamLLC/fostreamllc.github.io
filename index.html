@@ -20,7 +20,7 @@ body {
     color: #1e293b;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 
 .nav {
     display: flex;
@@ -48,69 +48,51 @@ body {
     color: #16a34a;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
     text-align: center;
-    padding: 140px 20px 120px 20px;
+    padding: 150px 20px 130px 20px;
     background: white;
 }
 
 .hero h1 {
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 28px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
 }
 
 .hero p {
     font-size: 18px;
     max-width: 720px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 50px auto;
     color: #64748b;
     line-height: 1.7;
 }
 
 .button {
     display: inline-block;
-    padding: 18px 48px;
+    padding: 18px 50px;
     background: #16a34a;
     color: white;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease;
-    box-shadow: 0 8px 25px rgba(22,163,74,0.25);
 }
 
 .button:hover {
     background: #15803d;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(22,163,74,0.35);
+    transform: translateY(-2px);
 }
 
-/* ===== Soft Gradient Divider ===== */
-
-.divider {
-    height: 120px;
-    background: linear-gradient(to bottom, white, #f1f5f9);
-}
-
-/* ===== Separator Line ===== */
-
-.section-separator {
-    width: 80px;
-    height: 3px;
-    background: #16a34a;
-    margin: 0 auto 60px auto;
-    border-radius: 2px;
-}
-
-/* ================= APP SECTION ================= */
+/* APP SECTION */
 
 .app-section {
     padding: 120px 80px;
     background: #f1f5f9;
+    border-top: 1px solid #e2e8f0; /* subtle clean separator */
 }
 
 .app-container {
@@ -121,26 +103,21 @@ body {
     gap: 90px;
 }
 
-/* Logo Card */
-
 .logo-card {
     background: white;
     padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(15,23,42,0.08);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.06);
 }
 
 .app-logo {
-    width: 260px;
-    border-radius: 20px;
+    width: 240px;
+    border-radius: 18px;
 }
 
-/* Text Section */
-
 .app-text h2 {
-    font-size: 36px;
-    margin-bottom: 22px;
-    letter-spacing: -0.3px;
+    font-size: 34px;
+    margin-bottom: 20px;
 }
 
 .app-text p {
@@ -160,16 +137,14 @@ body {
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s ease;
-    box-shadow: 0 8px 25px rgba(22,163,74,0.25);
 }
 
 .app-button:hover {
     background: #15803d;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(22,163,74,0.35);
+    transform: translateY(-2px);
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 .footer {
     text-align: center;
@@ -180,7 +155,7 @@ body {
     border-top: 1px solid #e2e8f0;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .app-container {
@@ -197,7 +172,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     .logo-card {
@@ -208,8 +183,6 @@ body {
 </head>
 
 <body>
-
-<!-- NAVBAR -->
 
 <div class="nav">
     <div class="logo">FoStream LLC</div>
@@ -222,8 +195,6 @@ body {
     </div>
 </div>
 
-<!-- HERO -->
-
 <section class="hero">
     <h1>Welcome to a World of Possibilities<br>Right in Your Pocket.</h1>
 
@@ -234,12 +205,6 @@ body {
 
     <a href="#app" class="button">Learn More</a>
 </section>
-
-<div class="divider"></div>
-
-<div class="section-separator"></div>
-
-<!-- APP SECTION -->
 
 <section class="app-section" id="app">
 

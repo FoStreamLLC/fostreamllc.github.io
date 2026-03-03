@@ -4,28 +4,133 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VocabSprout Support</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 60px auto;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 80px;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav a {
+    color: #475569;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.nav a:hover {
+    color: #16a34a;
+}
+
+/* PAGE CONTAINER */
+
+.container {
+    max-width: 820px;
+    margin: 100px auto;
     padding: 0 20px;
 }
+
 h1 {
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 25px;
 }
+
+p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
 ul {
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    color: #475569;
 }
+
+.email {
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* FOOTER */
+
 .footer {
-    margin-top: 50px;
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    color: #94a3b8;
     font-size: 14px;
-    opacity: 0.7;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 80px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .nav {
+        padding: 25px 30px;
+    }
+
+    .container {
+        margin: 80px auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
 }
 </style>
 </head>
+
 <body>
+
+<!-- NAVBAR -->
+
+<div class="nav">
+    <div class="logo">FoStream LLC</div>
+    <div>
+        <a href="/">Home</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/support">Support</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
 
 <h1>VocabSprout Support</h1>
 
@@ -33,7 +138,7 @@ ul {
 
 <p>If you have questions, feedback, or need assistance, please contact us and we’ll be happy to help.</p>
 
-<p><strong>Email:</strong> fostreamllc@gmail.com</p>
+<p><strong>Email:</strong> <span class="email">fostreamllc@gmail.com</span></p>
 
 <h2>When contacting support, please include:</h2>
 
@@ -44,6 +149,8 @@ ul {
 </ul>
 
 <p>We aim to respond within 2 business days.</p>
+
+</div>
 
 <div class="footer">
 © 2026 FoStream LLC

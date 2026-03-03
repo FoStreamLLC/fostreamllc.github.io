@@ -20,14 +20,15 @@ body {
     color: #1e293b;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 28px 80px;
     background: white;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .logo {
@@ -40,54 +41,65 @@ body {
     text-decoration: none;
     margin-left: 30px;
     font-size: 14px;
-    transition: 0.3s;
+    transition: 0.25s ease;
 }
 
 .nav a:hover {
     color: #16a34a;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero {
     text-align: center;
-    padding: 120px 20px 100px 20px;
+    padding: 140px 20px 120px 20px;
     background: white;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    letter-spacing: -0.5px;
 }
 
 .hero p {
     font-size: 18px;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
+    max-width: 720px;
+    margin: 0 auto 45px auto;
     color: #64748b;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .button {
     display: inline-block;
-    padding: 16px 42px;
+    padding: 18px 48px;
     background: #16a34a;
     color: white;
-    border-radius: 40px;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 25px rgba(22,163,74,0.25);
 }
 
 .button:hover {
     background: #15803d;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(22,163,74,0.35);
 }
 
-/* APP SECTION */
+/* ===== Subtle Divider ===== */
+
+.divider {
+    height: 120px;
+    background: linear-gradient(to bottom, white, #f1f5f9);
+}
+
+/* ================= APP SECTION ================= */
 
 .app-section {
-    padding: 100px 80px;
+    padding: 120px 80px;
     background: #f1f5f9;
 }
 
@@ -96,52 +108,69 @@ body {
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 90px;
+}
+
+/* Logo Card Upgrade */
+
+.logo-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(15,23,42,0.08);
 }
 
 .app-logo {
-    width: 280px;
+    width: 260px;
     border-radius: 20px;
 }
 
+/* Text Section */
+
 .app-text h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 22px;
+    letter-spacing: -0.3px;
 }
 
 .app-text p {
     font-size: 17px;
     color: #64748b;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    max-width: 520px;
 }
 
 .app-button {
     display: inline-block;
-    padding: 18px 46px;
+    padding: 18px 50px;
     background: #16a34a;
     color: white;
     border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 25px rgba(22,163,74,0.25);
 }
 
 .app-button:hover {
     background: #15803d;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(22,163,74,0.35);
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 .footer {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
     background: white;
     color: #94a3b8;
     font-size: 14px;
+    border-top: 1px solid #e2e8f0;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 900px) {
     .app-container {
@@ -154,11 +183,15 @@ body {
     }
 
     .app-section {
-        padding: 80px 30px;
+        padding: 90px 30px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 38px;
+    }
+
+    .logo-card {
+        padding: 30px;
     }
 }
 </style>
@@ -192,13 +225,17 @@ body {
     <a href="#app" class="button">Learn More</a>
 </section>
 
+<div class="divider"></div>
+
 <!-- APP SECTION -->
 
 <section class="app-section" id="app">
 
     <div class="app-container">
 
-        <img src="vocab-logo.PNG" alt="VocabSprout Logo" class="app-logo">
+        <div class="logo-card">
+            <img src="vocab-logo.PNG" alt="VocabSprout Logo" class="app-logo">
+        </div>
 
         <div class="app-text">
             <h2>VocabSprout – Your SAT & ACT Vocabulary Companion</h2>

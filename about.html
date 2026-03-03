@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — FoStream LLC</title>
+<title>FoStream LLC</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -48,28 +48,100 @@ body {
     color: #16a34a;
 }
 
-/* PAGE CONTAINER */
+/* HERO */
 
-.container {
-    max-width: 820px;
-    margin: 120px auto;
-    padding: 0 20px;
+.hero {
+    text-align: center;
+    padding: 150px 20px 130px 20px;
+    background: white;
 }
 
-h1 {
-    font-size: 40px;
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    letter-spacing: -0.4px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 720px;
+    margin: 0 auto 50px auto;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 50px;
+    background: #16a34a;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+}
+
+/* APP SECTION */
+
+.app-section {
+    padding: 120px 80px;
+    background: #f1f5f9;
+    border-top: 1px solid #e2e8f0;
+}
+
+.app-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.logo-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+}
+
+.app-logo {
+    width: 240px;
+    border-radius: 18px;
+}
+
+.app-text h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.app-text p {
+    font-size: 17px;
+    color: #64748b;
+    line-height: 1.7;
     margin-bottom: 35px;
+    max-width: 520px;
 }
 
-h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+.app-button {
+    display: inline-block;
+    padding: 18px 50px;
+    background: #16a34a;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
-p {
-    color: #475569;
-    line-height: 1.8;
-    margin-bottom: 20px;
+.app-button:hover {
+    background: #15803d;
+    transform: translateY(-2px);
 }
 
 /* FOOTER */
@@ -81,22 +153,30 @@ p {
     color: #94a3b8;
     font-size: 14px;
     border-top: 1px solid #e2e8f0;
-    margin-top: 100px;
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
+    .app-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .nav {
         padding: 25px 30px;
     }
 
-    .container {
-        margin: 80px auto;
+    .app-section {
+        padding: 90px 30px;
     }
 
-    h1 {
-        font-size: 32px;
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .logo-card {
+        padding: 30px;
     }
 }
 </style>
@@ -115,27 +195,43 @@ p {
     </div>
 </div>
 
-<div class="container">
+<section class="hero">
+    <h1>Welcome to a World of Possibilities<br>Right in Your Pocket.</h1>
 
-<h1>Who We Are</h1>
+    <p>
+        At FoStream LLC, we create mobile apps designed to educate,
+        entertain, and enhance everyday life.
+    </p>
 
-<p>
-FoStream LLC is a mobile app development company dedicated to building thoughtfully designed digital products. We focus on creating applications that are intuitive, reliable, and built to enhance everyday experiences.
-</p>
+    <!-- UPDATED LINK -->
+    <a href="/about.html" class="button">Learn More</a>
+</section>
 
-<p>
-As a growing technology company, our work centers on innovation, clean design, and seamless performance. We believe great apps are not only functional—they are purposeful, user-focused, and crafted with care.
-</p>
+<section class="app-section" id="app">
 
-<p>
-We develop mobile solutions across areas such as education, productivity, and digital tools that support learning and growth. Our goal is to create high-quality, scalable applications that empower users and make technology more accessible.
-</p>
+    <div class="app-container">
 
-<p>
-At FoStream LLC, we are driven by a passion for technology and a commitment to excellence—turning ideas into meaningful digital experiences.
-</p>
+        <div class="logo-card">
+            <img src="vocab-logo.PNG" alt="VocabSprout Logo" class="app-logo">
+        </div>
 
-</div>
+        <div class="app-text">
+            <h2>VocabSprout – Your SAT & ACT Vocabulary Companion</h2>
+
+            <p>
+                Master essential vocabulary with curated word decks,
+                smart flashcards, and efficient study tools designed
+                specifically for SAT and ACT preparation.
+            </p>
+
+            <a href="https://apps.apple.com/us/app/vocabsprout/id6758027898" class="app-button">
+                Go to Apple App Store
+            </a>
+        </div>
+
+    </div>
+
+</section>
 
 <div class="footer">
 © 2026 FoStream LLC

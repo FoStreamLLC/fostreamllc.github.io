@@ -3,66 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fostream LLC</title>
+<title>FoStream LLC</title>
+
 <style>
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #12203F;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
     color: white;
-    text-align: center;
 }
-header {
-    padding: 60px 20px;
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('hero.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-h1 {
-    font-size: 42px;
+
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
 }
-p {
-    font-size: 18px;
+
+/* CONTENT */
+.hero-content {
+    position: relative;
     max-width: 700px;
-    margin: 20px auto;
+    margin-left: 80px;
 }
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
 .button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #4CAF50;
+    padding: 14px 32px;
+    border-radius: 40px;
+    border: 2px solid #28a745;
+    color: #28a745;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #28a745;
+    color: white;
+}
+
+/* NAVBAR */
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.nav a {
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    margin-left: 30px;
+    font-size: 15px;
 }
-footer {
-    margin-top: 80px;
-    padding: 20px;
-    font-size: 14px;
-    opacity: 0.7;
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 500;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-<h1>Fostream LLC</h1>
-<p>We build educational mobile applications that help students grow smarter every day.</p>
-<a class="button" href="https://apps.apple.com">Download VocabSprout</a>
-</header>
+<div class="hero">
 
-<section>
-<h2>Our App</h2>
-<p>VocabSprout is a vocabulary learning app designed to help students master SAT-level words through flashcards, quizzes, and smart repetition.</p>
-</section>
+    <div class="nav">
+        <div class="logo">FoStream LLC</div>
+        <div>
+            <a href="/">Home</a>
+            <a href="#">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/support">Support</a>
+        </div>
+    </div>
 
-<section>
-<h2>Legal</h2>
-<p><a href="/privacy-policy" style="color:white;">Privacy Policy</a></p>
-<p><a href="/support" style="color:white;">Support</a></p>
-<p><a href="contact.html" style="color:white;">Contact Us</a></p>
-</section>
+    <div class="hero-content">
+        <h1>Welcome to a World of Possibilities<br>Right in Your Pocket.</h1>
 
-<footer>
-© 2026 Fostream LLC. All rights reserved.
-</footer>
+        <p>
+            At FoStream LLC, we create mobile apps designed to educate,
+            entertain, and enhance everyday life. Whether you're looking
+            to learn something new, stay organized, or explore fresh
+            experiences, our apps bring exciting opportunities right to
+            your fingertips. With more to come, the possibilities are endless!
+        </p>
+
+        <a href="#" class="button">LEARN MORE</a>
+    </div>
+
+</div>
 
 </body>
 </html>

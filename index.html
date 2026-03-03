@@ -20,25 +20,20 @@ body, html {
 
 /* HERO SECTION */
 .hero {
-    position: relative;
     height: 100vh;
-    background: url('hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* DARK OVERLAY */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: linear-gradient(
+        135deg,
+        #0f2027 0%,
+        #203a43 40%,
+        #2c5364 100%
+    );
 }
 
 /* CONTENT */
 .hero-content {
-    position: relative;
     max-width: 700px;
     margin-left: 80px;
 }
@@ -53,20 +48,21 @@ body, html {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
+    opacity: 0.9;
 }
 
 .button {
     display: inline-block;
     padding: 14px 32px;
     border-radius: 40px;
-    border: 2px solid #28a745;
-    color: #28a745;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .button:hover {
-    background: #28a745;
+    background: #4CAF50;
     color: white;
 }
 
@@ -79,7 +75,6 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
 }
 
 .nav a {
@@ -87,9 +82,11 @@ body, html {
     text-decoration: none;
     margin-left: 30px;
     font-size: 15px;
+    opacity: 0.9;
 }
 
 .nav a:hover {
+    opacity: 1;
     text-decoration: underline;
 }
 
@@ -98,6 +95,7 @@ body, html {
     font-weight: 500;
 }
 </style>
+    
 </head>
 
 <body>

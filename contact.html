@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — FoStream LLC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 80px;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav a {
+    color: #475569;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.nav a:hover {
+    color: #16a34a;
+}
+
+/* PAGE CONTAINER */
+
+.container {
+    max-width: 700px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 20px rgba(15,23,42,0.05);
+}
+
+.email {
+    font-weight: 600;
+    color: #16a34a;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    color: #94a3b8;
+    font-size: 14px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 100px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .nav {
+        padding: 25px 30px;
+    }
+
+    .container {
+        margin: 80px auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+</style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 80px;">
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="nav">
+    <div class="logo">FoStream LLC</div>
+    <div>
+        <a href="/">Home</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/support">Support</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
+
 <h1>Contact Us</h1>
-<p>Email: support@fostreamllc.com</p>
+
+<p>
+If you have general inquiries, partnership opportunities, or business-related questions,
+please reach out to us.
+</p>
+
+<div class="email-box">
+    <p>Email</p>
+    <p class="email">support@fostreamllc.com</p>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 FoStream LLC
+</div>
+
 </body>
 </html>
